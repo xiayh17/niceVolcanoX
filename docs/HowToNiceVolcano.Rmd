@@ -8,7 +8,7 @@ output:
   xaringan::moon_reader:
     css: 
       - default
-      - css/mytheme.css
+      - css/biotraineetheme.css
       - css/mytheme-fonts.css
     lib_dir: libs
     seal: false
@@ -31,8 +31,8 @@ background-image: url("biotrainee_elements/back_f.png")
 background-position: contain
 background-size: 100%, cover
 
-```{r meta, echo=FALSE}
-library(metathis)
+```{r meta, echo=FALSE, warning=FALSE}
+library(metathis,quietly = TRUE)
 meta() %>%
   meta_general(
     description = "漂亮的火山图是怎么的做的",
@@ -55,11 +55,6 @@ options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 library(knitr)
 library(xaringanExtra)
 library(icons)
-opts_chunk$set(echo=FALSE,
-               collapse = TRUE,
-               fig.width = 7.252,
-               fig.height = 4,
-               dpi = 300)
 
 # set engines
 knitr::knit_engines$set("markdown")
@@ -84,28 +79,21 @@ xaringanExtra::use_logo(
 # `r rmarkdown::metadata$title`
 ## `r rmarkdown::metadata$subtitle`
 
-**`r rmarkdown::metadata$author`**<br>
-`r rmarkdown::metadata$date`
+### **`r rmarkdown::metadata$author`**<br>
+### `r rmarkdown::metadata$date`
 
 
 ---
 background-image: url("biotrainee_elements/back_c.png")
 background-position: contain
-background-size: 100%, cover
+background-size: 100%
 
----
+# 火山图的基本形态
 
+```{r volcano_overview,echo=FALSE}
+knitr::include_graphics("png/volcano_plot.png")
+```
 
----
-
-name: hello
-class: middle, center, hide-logo
-
-<img style="border-radius: 50%;" src="biotrainee_elements/logo.png" width="300px"/>
-
-# NHS-R Community 
-
-## Promoting the use of R in the NHS
 
 ---
 name: hello
@@ -139,3 +127,16 @@ Downside is they aren't very memorable. I would encourage a "roadmap" approach t
 4\. [Final slide and contact info](#goodbye)
 ]
 ] <!--end of right-column-->
+
+---
+
+name: hello
+class: middle, center, hide-logo
+
+<img style="border-radius: 50%;" src="biotrainee_elements/logo.png" width="300px"/>
+
+# NHS-R Community 
+
+## Promoting the use of R in the NHS
+
+---

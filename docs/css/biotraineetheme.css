@@ -1,0 +1,64 @@
+:root {
+/*-- COLOR VARIABLES --*/
+--biotrainee:        #3ab54a;
+--biotrainee_deep:   #006600;
+--head1:#d3d8dc;
+}
+
+/*-- Custom class for the title slide --*/
+
+.title-slide {
+  /*background-color:   #E7EDF8;*/
+  background-color:   #FFFFFF;
+  color:              #323233;
+}
+/*-- Headings --*/
+.title-slide h1,h2 {
+  font-size:          2.4em;
+  font-weight:        600;
+  color:              var(--biotrainee_deep);
+}
+.title-slide h3 {
+  color:              var(--biotrainee_deep);
+  font-size:          1.1em;
+  font-style:         italic;
+  position: static;
+}
+
+/*-- HEADINGS --*/
+.remark-slide-content h1 {
+  font-weight:        400;
+  color:              var(--head1);
+  line-height:        1em;
+}
+
+.remark-slide-content h2 {
+  /*font-size:          35px;*/
+  /*font-size:          1.4em;*/
+  font-weight:        400;
+  color:              var(--biotrainee_deep);
+  line-height:        1em;
+  letter-spacing:     0.02em;
+}
+
+.remark-slide-content h3 {
+  /*font-size:          1em;*/
+  font-weight:        500;
+  color:              var(--biotrainee_deep);
+  line-height:        1em;
+}
+
+/*-- PARAGRAPH TEXT --*/
+.remark-slide-content {
+  font-size:          1.6rem;
+  line-height:        1.2em;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 1.5em;
+  right: 2em;
+  width: 450px;
+  height: 200px;
+  border: 2px solid gray;
+}
