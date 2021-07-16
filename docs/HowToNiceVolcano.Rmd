@@ -1,5 +1,5 @@
 ---
-title: "漂亮的火山图"
+title: "zui漂亮的火山图"
 subtitle: "是怎么做的"
 author: "Yonghe Xia"
 institute: "Biotrainee"
